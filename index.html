@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/css/style.css">
+    <title>lev1_4-3_1</title>
+  </head>
+  <body>
+    <!--lev1_4-->
+    <p class="exercise"><b>lev1_4</b></p>
+    <p id="eventParagraph">Click Here</p>
+
+    <hr>
+
+    <!--lev1_5-->
+    <p class="exercise"><b>lev1_5</b></p>
+    <section>
+      <h3> Klickzähler </h3>
+      <button id="clickMe">Click me: 0</button>
+      <h5>Gute Praxis: kein JavaScript-Code im HTML</h5>
+    </section>
+    
+    <hr>
+
+    <!--lev1_6-->
+    <p class="exercise"><b>lev1_6</b></p>
+    <select id="my-select">
+      <option value="" disabled selected>Select One</option>
+      <option value="select1">Select 1</option>
+      <option value="select2">Select 2</option>
+      <option value="select3">Select 3</option>
+      <option value="select4">Select 4</option>
+      <option value="select5">Select 5</option>
+    </select>
+    <p id="option-selected">-</p>
+
+    <hr>
+
+    <!--lev2_1-->
+    <p class="exercise"><b>lev2_1</b></p>
+    <section>
+      <ul id="umschalter">
+        <li id="grauTaste"></li>
+        <li id="weissTaste"></li>
+        <li id="blauTaste"></li>
+        <li id="gelbTaste"></li>
+      </ul>
+  
+      <h1>Farbschema Umschalter</h1>
+  
+      <p>Versuche auf eine der obigen Farben zu klicken, um die Farben auf dieser Seite zu ändern! </p>
+    </section>
+    
+    <hr>
+
+    <!--lev2_2-->
+    <p class="exercise"><b>lev2_2</b></p>
+    <section>
+      <h2 id="print-keycode">-</h2>
+      <div class="input-wrapper">
+        <div class="wrapper">
+          <p class="term">Key</p>
+          <p class="value" id="key">-</p>
+        </div>
+        <div class="wrapper">
+          <p class="term">KeyCode</p>
+          <p class="value" id="keycode">-</p>
+        </div>
+        <div class="wrapper">
+          <p class="term">Code</p>
+          <p class="value" id="code">-</p>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!--lev3_1-->
+    <p class="exercise"><b>lev3_1</b></p>
+    <section>
+      <h2>Meine dynamische Webseite</h2>
+      <p id="demo">Wähle eine Farbe:</p>
+      <p>
+        <button onclick="changeBackground('pink')">Rosa</button>
+        <button onclick="changeBackground('purple')">Lila</button>
+        <button onclick="changeBackground('orange')">Orange</button>
+      </p>
+      <p>
+        <input type="range" id="rot" value="255" min="0" max="255" onchange="changeHandle()" style="background:red">
+        Rot<br>
+        <input type="range" id="grun" value="255" min="0" max="255" onchange="changeHandle()" style="background:green">
+        Grün<br>
+        <input type="range" id="blau" value="255" min="0" max="255" onchange="changeHandle()" style="background:blue">
+        Blau
+      </p>
+    </section>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
